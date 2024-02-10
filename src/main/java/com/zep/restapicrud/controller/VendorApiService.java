@@ -15,6 +15,11 @@ public class VendorApiService
    @PostMapping
     public  String createVendorDetails(@RequestBody Vendor cloudVendor){
         this.cloudVendor=cloudVendor;
-        return  "Cloud Vendor Created Succesfully";
+        return  "Cloud Vendor Created Successfully";
+    }
+    @PutMapping
+    public  String updateVendorDetails(@RequestBody Vendor cloudVendor){
+        this.cloudVendor=cloudVendor;
+        return  "Cloud Vendor Updated Successfully";
     }
 }
